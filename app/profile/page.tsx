@@ -22,7 +22,7 @@ export default function ProfilePage() {
       title: "New York to London",
       date: "Mar 15, 2024",
       status: "Upcoming",
-      image: "/placeholder.svg?height=100&width=200",
+      image: "/placeholder.jpg?height=100&width=200",
       details: {
         departure: "JFK - 08:30 AM",
         arrival: "LHR - 08:45 PM",
@@ -37,7 +37,7 @@ export default function ProfilePage() {
       title: "Hilton London",
       date: "Mar 15-22, 2024",
       status: "Upcoming",
-      image: "/placeholder.svg?height=100&width=200",
+      image: "/placeholder.jpg?height=100&width=200",
       details: {
         checkIn: "Mar 15, 3:00 PM",
         checkOut: "Mar 22, 12:00 PM",
@@ -52,7 +52,7 @@ export default function ProfilePage() {
       title: "Bali Adventure Package",
       date: "Jan 10-17, 2024",
       status: "Completed",
-      image: "/placeholder.svg?height=100&width=200",
+      image: "/placeholder.jpg?height=100&width=200",
       details: {
         duration: "7 Days",
         accommodation: "Luxury Villa",

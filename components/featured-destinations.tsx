@@ -7,52 +7,75 @@ export function FeaturedDestinations() {
   const destinations = [
     {
       id: 1,
-      name: "Bali, Indonesia",
-      image: "/placeholder.svg?height=400&width=600",
-      price: "$899",
+      name: "Goa, India",
+      image: "/placeholder-user.jpg?height=400&width=600",
+      price: "INR 12,899",
       rating: 4.8,
     },
     {
       id: 2,
-      name: "Paris, France",
-      image: "/placeholder.svg?height=400&width=600",
-      price: "$1,299",
+      name: "Shimla, India",
+      image: "/shimla.jpg?height=400&width=600",
+      price: "INR 9,299",
       rating: 4.9,
     },
     {
       id: 3,
-      name: "Santorini, Greece",
-      image: "/placeholder.svg?height=400&width=600",
-      price: "$1,199",
+      name: "Kullu-Manali, India",
+      image: "/kullu.jpg?height=400&width=600",
+      price: "INR 11,199",
       rating: 4.7,
     },
     {
       id: 4,
-      name: "Tokyo, Japan",
-      image: "/placeholder.svg?height=400&width=600",
-      price: "$1,499",
+      name: "Bali, Indonesia",
+      image: "/bali.jpg?height=400&width=600",
+      price: "INR 31,499",
       rating: 4.8,
     },
     {
       id: 5,
-      name: "New York, USA",
-      image: "/placeholder.svg?height=400&width=600",
-      price: "$1,099",
+      name: "Dubai, UAE",
+      image: "/dubai.jpg?height=400&width=600",
+      price: "INR 81,099",
       rating: 4.6,
     },
     {
       id: 6,
       name: "Maldives",
-      image: "/placeholder.svg?height=400&width=600",
-      price: "$1,899",
+      image: "/maldives1.jpg?height=400&width=600",
+      price: "INR 31,899",
       rating: 4.9,
+    },
+    {
+      id: 7,
+      name: "Jammu-kashmir, India",
+      image: "/jammu.jpg?height=400&width=600",
+      price: "INR 21,899",  
+      rating: 4.9,
+
+
+    },
+    {
+      id: 8,
+      name: "Kerala, India",
+      image: "/kerala.jpg?height=400&width=600",
+      price: "INR 15,899",
+      rating: 4.8,
+    },
+    {
+      id: 9,
+      name: "Andaman & Nicobar, India",
+      image: "/andaman.jpg?height=400&width=600",
+      price: "INR 17,899",
+      rating: 4.7,
     },
   ]
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
       {destinations.map((destination) => (
-        <Link href={`/destinations/${destination.id}`} key={destination.id}>
+        <Link href={`/destinations/INR {destination.id}`} key={destination.id}>
           <Card className="overflow-hidden hover:shadow-lg transition-shadow">
             <div className="relative h-60">
               <Image
@@ -76,7 +99,7 @@ export function FeaturedDestinations() {
                       viewBox="0 0 24 24"
                       fill={i < Math.floor(destination.rating) ? "currentColor" : "none"}
                       stroke="currentColor"
-                      className={`h-4 w-4 ${i < Math.floor(destination.rating) ? "text-yellow-400" : "text-gray-300"}`}
+                      className={`h-4 w-4 INR {i < Math.floor(destination.rating) ? "text-yellow-400" : "text-gray-300"}`}
                     >
                       <path
                         strokeLinecap="round"

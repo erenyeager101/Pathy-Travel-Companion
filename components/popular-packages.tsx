@@ -12,18 +12,18 @@ export function PopularPackages() {
       id: 1,
       title: "Bali Adventure Package",
       location: "Bali, Indonesia",
-      image: "/placeholder.svg?height=400&width=600",
-      price: "$1,299",
+      image: "/bali.jpg?height=400&width=600",
+      price: "INR 31,299",
       duration: "7 Days",
       groupSize: "Up to 10",
       discount: "20% OFF",
     },
     {
       id: 2,
-      title: "European Highlights Tour",
-      location: "Multiple Cities, Europe",
-      image: "/placeholder.svg?height=400&width=600",
-      price: "$2,499",
+      title: "Andman Island Hopping",
+      location: "Andman Islands, India",
+      image: "/andaman.jpg?height=400&width=600",
+      price: "INR 22,499",
       duration: "14 Days",
       groupSize: "Up to 20",
       discount: "15% OFF",
@@ -32,8 +32,8 @@ export function PopularPackages() {
       id: 3,
       title: "Thailand Beach Getaway",
       location: "Phuket, Thailand",
-      image: "/placeholder.svg?height=400&width=600",
-      price: "$999",
+      image: "/thailand.jpg?height=400&width=600",
+      price: "INR 49,999",
       duration: "5 Days",
       groupSize: "Up to 8",
       discount: "25% OFF",
@@ -70,7 +70,7 @@ export function PopularPackages() {
               <span className="text-sm text-muted-foreground">From</span>
               <p className="text-xl font-bold text-primary">{pkg.price}</p>
             </div>
-            <Link href={`/packages/${pkg.id}`}>
+            <Link href={`/packages/INR {pkg.id}`}>
               <Button>View Details</Button>
             </Link>
           </CardFooter>

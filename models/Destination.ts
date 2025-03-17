@@ -8,7 +8,7 @@ const DestinationSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    default: "/placeholder.svg?height=400&width=600",
+    default: "/placeholder.jpg?height=400&width=600",
   },
   price: {
     type: String,

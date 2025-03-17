@@ -26,7 +26,7 @@ const BookingSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    default: "/placeholder.svg?height=100&width=200",
+    default: "/placeholder.jpg?height=100&width=200",
   },
   details: {
     type: mongoose.Schema.Types.Mixed,

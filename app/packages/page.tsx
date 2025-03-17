@@ -16,8 +16,8 @@ export default function PackagesPage() {
       id: 1,
       title: "Bali Adventure Package",
       location: "Bali, Indonesia",
-      image: "/placeholder.svg?height=400&width=600",
-      price: "$1,299",
+      image: "/placeholder-logo.jpg.?height=400&width=600",
+      price: "INR 9,299",
       duration: "7 Days",
       groupSize: "Up to 10",
       discount: "20% OFF",
@@ -31,7 +31,7 @@ export default function PackagesPage() {
       title: "European Highlights Tour",
       location: "Multiple Cities, Europe",
       image: "/placeholder.svg?height=400&width=600",
-      price: "$2,499",
+      price: "INR 38,499",
       duration: "14 Days",
       groupSize: "Up to 20",
       discount: "15% OFF",
@@ -44,7 +44,7 @@ export default function PackagesPage() {
       title: "Thailand Beach Getaway",
       location: "Phuket, Thailand",
       image: "/placeholder.svg?height=400&width=600",
-      price: "$999",
+      price: "INR 27,999",
       duration: "5 Days",
       groupSize: "Up to 8",
       discount: "25% OFF",
@@ -57,7 +57,7 @@ export default function PackagesPage() {
       title: "Japan Cherry Blossom Tour",
       location: "Tokyo, Kyoto, Osaka",
       image: "/placeholder.svg?height=400&width=600",
-      price: "$2,799",
+      price: "INR 42,799",
       duration: "10 Days",
       groupSize: "Up to 15",
       discount: "10% OFF",
@@ -71,7 +71,7 @@ export default function PackagesPage() {
       title: "African Safari Adventure",
       location: "Kenya & Tanzania",
       image: "/placeholder.svg?height=400&width=600",
-      price: "$3,499",
+      price: "INR 33,499",
       duration: "8 Days",
       groupSize: "Up to 12",
       discount: "5% OFF",
@@ -84,7 +84,7 @@ export default function PackagesPage() {
       title: "Greek Islands Cruise",
       location: "Santorini, Mykonos, Crete",
       image: "/placeholder.svg?height=400&width=600",
-      price: "$1,899",
+      price: "INR 41,899",
       duration: "7 Days",
       groupSize: "Up to 30",
       discount: "15% OFF",
@@ -135,7 +135,7 @@ export default function PackagesPage() {
         <section className="relative">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/placeholder.svg?height=400&width=1920"
+              src="/placeholder-user.jpg?height=400&width=1920"
               alt="Travel packages"
               fill
               className="object-cover brightness-50"
@@ -267,7 +267,7 @@ export default function PackagesPage() {
                   <Card key={pkg.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                     <div className="relative h-60">
                       <Badge className="absolute top-4 right-4 z-10 bg-primary">{pkg.discount}</Badge>
-                      <Image src={pkg.image || "/placeholder.svg"} alt={pkg.title} fill className="object-cover" />
+                      <Image src={pkg.image || "/placeholder.jpg"} alt={pkg.title} fill className="object-cover" />
                     </div>
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-xl mb-2">{pkg.title}</h3>
